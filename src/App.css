@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #79AEA3;
+  height: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.title{
+  float: left;
+  margin-top: 0px;
+}
+
+.button-side{
+  float: right;
+}
+
+#btnegistro{
+  margin: 2px;
+  background-color: #87C1B6;
+    border: none;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#btnlogin{
+  background-color: #87C1B6;
+  border: none;
+  color: white;
+  padding: 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btnlogin:hover{
+  background-color: #6f6f6f85;
+  cursor: pointer;
+}
+
+#btnegistro:hover{
+  background-color: #6f6f6f85;
+  cursor: pointer; 
+}
+
+#open{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 0px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+#show{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 0px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+#close-modal {
+  background-color: #e82929;
+  border: none;
+  color: white;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
+}
+
+#closer-modal:hover{
+  background-color: #ff3131;
+  cursor: pointer;
+}
+
+#closer-modal {
+  background-color: #e82929;
+  border: none;
+  color: white;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
+}
+
+#close-modal:hover{
+  background-color: #ff3131;
+  cursor: pointer;
+}
+
+.btnaceptar {
+  background-color: #1ba739;
+  border: none;
+  color: white;
+  padding: 5px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 35px;
+}
+
+.btnaceptar:hover{
+  background-color: #2ce654;
+  cursor: pointer;
+}
+
+
+.input {
+  border: none;
+  border-bottom: 2px solid #052F5F;
+  width: 250px;
+  display: block;
+  margin-top: 15px;
+  height: 30px;
+}
+
+.lbltitle{
+  display: flex;
+  margin-top: 30px;
+}
+
+.label-container{
+  position:fixed;
+  bottom:48px;
+  right:105px;
+  display:table;
+  visibility: hidden;
+}
+
+.label-text{
+  color:#FFF;
+  background:rgba(51,51,51,0.5);
+  display:table-cell;
+  vertical-align:middle;
+  padding:10px;
+  border-radius:3px;
+}
+
+.label-arrow{
+  display:table-cell;
+  vertical-align:middle;
+  color:#333;
+  opacity:0.5;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#22AAA1;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+#text-posts{
+  width: 40%;
+  border-radius: 8px;
+
+  outline: -webkit-focus-ring-color none 0px;
+  resize: none;
+  overflow: auto;
+}
+
+#text-posts:focus{
+  height: 80px;
+}
+
+.makePost{
+  display: block;
+  margin-top: 30px;
+}
+
+.showPosts{
+  height: 100px;
+}
+
+#btnlogout{
+  background-color: #87C1B6;
+  border: none;
+  color: white;
+  padding: 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btnlogout:hover{
+  background-color: #6f6f6f85;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+#btnMakePost{
+    background-color: #5299A5;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 23px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnMakePost:hover{
+	background-color: #67B2BF;
+}
+
+.postContent{
+	width: 60%;
+	padding: 20px;
+    margin-left: 255px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    opacity: 0.5;
+    text-align: left;
+}
