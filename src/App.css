@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #79AEA3;
   height: 20px;
@@ -20,11 +15,6 @@
 
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .title{
@@ -144,11 +134,12 @@
   display: block;
   margin-top: 15px;
   height: 30px;
+  margin:0 auto;
 }
 
 .lbltitle{
-  display: flex;
-  margin-top: 30px;
+  margin:0 auto;
+  line-height: 50px;
 }
 
 .label-container{

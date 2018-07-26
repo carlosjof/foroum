@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-
-import Posts from '../component/posts';
-
 import firebase from '../config/fire';
 import 'firebase/auth';
 
@@ -57,15 +54,10 @@ class Header extends Component {
    					useremail: email
   				});
 
-				firebase.auth().createUserWithEmailAndPassword(email, password).then((user) => {
-						}).catch(function(error) {
-								// Handle Errors here.
-								let errorCode = error.code;
-								let errorMessage = error.message;
-								// ...
-			});
-				alert("Ya te Registrate? \nSi, Inicia sesion y comienza a postear!");
-
+				firebase.auth().createUserWithEmailAndPassword(email, password)
+				.catch(error=>{
+					alert(error.message)
+				})
 			}
     	}
 
@@ -85,6 +77,9 @@ class Header extends Component {
 			// Handle Errors here.
 			var errorCode = error.code;
 			var errorMessage = error.message;
+			console.log('====================================');
+			console.log(`${errorCode} : ${errorMessage}`);
+			console.log('====================================');
 			// ...
 		});
 
@@ -114,8 +109,7 @@ class Header extends Component {
 	}
 
 	render() {
-		let database = firebase.database();
-		let user = firebase.auth().currentUser;
+
 		let useremail;
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -138,9 +132,9 @@ firebase.auth().onAuthStateChanged((user) => {
 
 			<label id="lblusuario">USUARIO</label>
 
-			<button id = "btnlogin" onClick = {this.login} > Login < /button>
+			<button id = "btnlogin" onClick = {this.login} > Login </button>
 
-			<button id = "btnegistro" onClick = {this.modal} > Sign UP! < /button>
+			<button id = "btnegistro" onClick = {this.modal} > Sign UP! </button>
 
 
 
@@ -150,16 +144,16 @@ firebase.auth().onAuthStateChanged((user) => {
 
 			<h2> Registrate! </h2>
 
-			<label className = "lbltitle" > Usuario* < /label> 
+			<label className = "lbltitle" > Usuario* </label> 
 			<input type = "text" id = "usuario" name = "usuario" className = "input" placeholder = "Ingrese Usuario" onChange = {this.handleChange}/>
 
-			<label className = "lbltitle" > Contraseña* < /label> 
+			<label className = "lbltitle" > Contraseña* </label> 
 			<input type = "password" id = "password" name = "password" className = "input" placeholder = "Ingrese Contraseña" onChange = { this.handleChange }/>
 
-			<label className = "lbltitle" > Nombre* < /label> 
+			<label className = "lbltitle" > Nombre* </label> 
 			<input type = "text" id="nombre" name = "nombre" className = "input" placeholder = "Ingrese Nombre" />
 
-			<label className = "lbltitle" > Apellido* < /label> 
+			<label className = "lbltitle" > Apellido* </label> 
 			<input type = "text" id="apellido" name = "apellido" className = "input" placeholder = "Ingrese Apellido" />
 
 			<input type = "submit" className = "btnaceptar" value = "Aceptar" />
@@ -174,7 +168,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 			<h2> Inicia Sesion! </h2>
 
-			<label className = "lbltitle" > Usuario < /label> 
+			<label className = "lbltitle" > Usuario </label> 
 			<input type = "text" name = "usuario" id = "email" className = "input" placeholder = "Ingrese Usuario" onChange = { this.handleChange }/>
 
 			<label className = "lbltitle" > Contraseña </label> 

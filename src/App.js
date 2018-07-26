@@ -37,7 +37,6 @@ class App extends Component {
 
   addPost(post){
     const previousPost = this.state.posts;
-    let user = firebase.auth().currentUser;
     let useremail, uid;
 
 firebase.auth().onAuthStateChanged((user) => {
